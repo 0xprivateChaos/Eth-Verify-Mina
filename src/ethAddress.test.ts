@@ -23,7 +23,7 @@ describe('ethAddress.js', () => {
 
     });
 
-    it('Should return the correct timestamp',async () => {
+    it('Should verfify the signature',async () => {
       var now = new Date().getTime();
       const wallet = Wallet.createRandom();
       const walletPublicKey = wallet.publicKey;
@@ -40,8 +40,14 @@ describe('ethAddress.js', () => {
       );
 
       expect(await ecdsaEthers.verify(proofE)).toBeTruthy();
+     
+     // var decodedValue = new TextDecoder().decode(proofE.publicInput.toBytes())  
       
+      
+     // expect(decodedValue - now < 120000).toBeTruthy()
     })
+
+
 
 
 
