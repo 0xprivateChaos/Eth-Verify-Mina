@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "eth-verify-mina",
-=======
   "name": "verifyme",
->>>>>>> 47119b1cc88925e27044e2952155eac2bfc0b8bb
   "version": "0.1.0",
   "description": "",
   "author": "",
@@ -22,11 +18,7 @@
     "buildw": "tsc --watch",
     "coverage": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
     "format": "prettier --write --ignore-unknown **/*",
-<<<<<<< HEAD
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-=======
     "test": "node --experimental-vm-modules --max-old-space-size=8192  node_modules/jest/bin/jest.js",
->>>>>>> 47119b1cc88925e27044e2952155eac2bfc0b8bb
     "testw": "node --experimental-vm-modules node_modules/jest/bin/jest.js --watch",
     "lint": "npx eslint src/* --fix"
   },
@@ -48,11 +40,8 @@
   },
   "engines": {
     "node": ">=18.14.0"
-<<<<<<< HEAD
-=======
   },
   "dependencies": {
     "ethers": "^6.13.4"
->>>>>>> 47119b1cc88925e27044e2952155eac2bfc0b8bb
   }
 }
